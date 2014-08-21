@@ -1,0 +1,359 @@
+﻿.StatusBox {
+    border:none;
+    font-family:Tahoma,'Times New Roman',Arial;
+    color:#454745;
+    text-align:left;
+    font-size:12px;
+    font-weight:bold;
+}
+.Header {
+    border-bottom:solid;
+    border-bottom-color:#E7E7EF;
+    border-left-color:white;
+    border-right-color:white;
+    border-top-color:white;
+    border-width: 2px;
+    font-family:Tahoma,'Times New Roman',Arial;
+    font-size:14px;
+}
+.RowText {
+    font-family:Tahoma,'Times New Roman',Arial;
+    font-size:11px;
+    color:#353535;
+    text-align:justify;
+}
+.HeaderTextTable {
+     font-family:Tahoma,'Times New Roman',Arial;
+     color:#454745;
+     text-align:center;
+     background-color:#EFEFEF;
+     border-bottom:solid;
+     border-width:thin;
+     border-left:none;
+     border-right:none;
+}
+.HeaderText {
+     font-family:Tahoma,'Times New Roman',Arial;
+     color:#585858;
+     text-align:center;
+     font-weight:bold;
+     font-size:24px;
+}
+.InternalHeaderText {
+     font-family:Tahoma,'Times New Roman',Arial;
+     color:#585858;
+     font-weight:bold;
+     font-size:16px;
+}
+.InternalSubHeaderText {
+     font-family:Tahoma,'Times New Roman',Arial;
+     color:#585858;
+     font-weight:bold;
+     font-size:12px;
+     padding-top:5px
+}
+.EmailPan {
+    background-color: #FFFFFF;  
+    border: outset 1px #9C9C9C;  
+    color: #454745;  
+    text-align:center;
+    width:auto;
+    height:auto;
+    visibility:hidden;
+    position:absolute;
+}
+.AddEventLabel {
+    font-family:Tahoma,'Times New Roman',Arial;
+    text-align:left;
+    font-size:12px;
+    color:#353535;
+    vertical-align:baseline;
+}
+.AddEventText {
+    font-family:Tahoma,'Times New Roman',Arial;
+    text-align:left;
+    font-size:12px;
+    color:#353535;
+}
+.AddEventErrorText {
+    font-family:Tahoma,'Times New Roman',Arial;
+    text-align:left;
+    font-size:12px;
+    color:#D61818;
+}
+.DateBox {
+    border:outset;
+    background-color:#EFEFEF;
+    width:70px;
+    text-align:center;
+    color:#232323;
+    border-width:thin;
+    border-color:#9C9C9C;
+}
+.PerPan {
+    background-color: #FFFFFF;  
+    border: outset 1px #9C9C9C;  
+    color: #454745;  
+    text-align:center;
+    width:auto;
+    height:auto;
+    visibility:hidden;
+    position:absolute;
+    max-width:1000px;
+    max-height:600px;
+}
+.ForPan {
+    background-color: #FFFFFF;  
+    width:auto;
+    height:auto;
+    max-width:1000px;
+    max-height:500px;
+}
+.ForPanDisable {
+    visibility:hidden;
+}
+.ForPanEventNum{ 
+    font-family:Tahoma,'Times New Roman',Arial;
+    color:#5A595A;
+    text-align:center;
+    font-size:14px;
+    font-weight:bold;
+    vertical-align:top;
+}
+.PerGridDataGrid{
+     margin-right:auto;
+     margin-left:auto;
+}
+.PerGridHd {
+     font-family:Tahoma,'Times New Roman',Arial;
+     color:#FFFFFF;
+     background-color:#6FA0DC;
+     font-weight:bold;
+     text-align:center;
+     font-size:12px;
+}
+.PerGridRow {
+    font-family:Tahoma,'Times New Roman',Arial;
+     background-color:#E8F1FF;
+     color:#000000;
+     text-align:center;
+     font-size:11px;
+}
+.PerGridRowOff {
+    font-family:Tahoma,'Times New Roman',Arial;
+     background-color:#CBDCF1;
+     color:#000000;
+     text-align:center;
+     font-size:11px;
+}
+.PerPanTitle{ 
+    font-family:Tahoma,'Times New Roman',Arial;
+    color:#5A595A;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+}
+.PerPanSubTitle{ 
+    font-family:Tahoma,'Times New Roman',Arial;
+    color:#5A595A;
+    text-align:center;
+    font-size:12px;
+    padding:10px;
+}
+.PerPanLabel { 
+    max-width:250px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    font-family:Tahoma,'Times New Roman',Arial;
+    color:#5A595A;
+    text-align:center;
+    font-size:14px;
+    font-weight:bold;
+}
+.PerPanButton { 
+    float:right;
+    position:absolute;
+}
+.CommentTexboxNormal {
+    border:none;
+    background:none;
+    width:350px;
+    font-size:11px;
+    font-family:Tahoma,'Times New Roman',Arial;
+    text-align:justify;
+}
+.CatTextBox {
+    border:none;
+    background:none;
+    width:100px;
+    font-size:11px;
+    font-family:Tahoma,'Times New Roman',Arial;
+    text-align:justify;
+}
+.CatTextBoxCol {
+    border:none;
+    background:none;
+    width:100px;
+    font-size:11px;
+    font-family:Tahoma,'Times New Roman',Arial;
+    text-align:center;
+    font-weight:bold;
+}
+.ComPanLabel { 
+    max-width:400px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    font-family:Tahoma,'Times New Roman',Arial;
+    color:#5A595A;
+    text-align:center;
+    font-size:14px;
+    font-weight:bold;
+}
+.CommentRowEdit { 
+    background-color:#FDFEE2;
+    border-color:#C1C707;
+    border-width:thin;
+    text-align:center;
+    font-size:11px;
+    font-family:Tahoma,'Times New Roman',Arial;
+}
+.CommentButton{
+    width:28px;
+    height:28px;
+    border:none;
+}
+.RadioList {
+    margin:auto;
+    width:auto;
+    height:auto;
+}
+.ModelBack {
+    background-color: #525652;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.LoadingGif {
+    width:32px;
+    height:32px;
+    padding:2px;
+}
+.EventDivRow { 
+    display:block;
+}
+.EventDivImg{ 
+    float:left;
+    padding-left:10px;
+    padding-right:15px;
+}
+.EventDivTitle { 
+    padding-left:50px;
+    padding-top:20px;
+    padding-bottom:5px;
+}
+.ELTableComponents{
+    width:28px;
+    height:28px;
+    border:none;
+    text-align:center;
+    vertical-align:bottom;
+}
+.TableComponents{
+    width:28px;
+    height:28px;
+    border:none;
+    text-align:center;
+    vertical-align:bottom;
+}
+.EmailEvent { 
+    height: 28px;
+    width: 32px;
+    vertical-align: bottom;
+}
+.MainButtons { 
+    padding:10px;
+}
+.ExtenderUpper {
+    overflow:hidden;
+    background-image:url('../Images/MenuBar.jpg');
+    background-repeat:repeat-x;
+    padding:0px;
+    height:25px;
+}
+.ExtenderLower {
+   background-image:url('../Images/MenuBarLower2.jpg');
+    background-repeat:repeat-x;
+    overflow:hidden;
+    padding:0px;
+    height:15px;
+}
+.UpperControlButtons{
+    padding-left:5px;
+    padding-right:5px;
+    width:32px;
+    height:32px;
+    border:none;
+}
+.LowerControlButtons{
+    padding-left:10px;
+    padding-right:10px;
+    width:32px;
+    height:32px;
+    border:none;
+}
+.LowerControlStatus{
+    padding-left:10px;
+    padding-right:10px;
+    width:26px;
+    height:26px;
+    border:none;
+}
+.StatusTextCount {
+     font-family:Tahoma,'Times New Roman',Arial;
+     color:#585858;
+     text-align:center;
+     font-weight:bold;
+     font-size:16px;
+     vertical-align: super;
+}
+.ForwardText {
+     font-family:Tahoma,'Times New Roman',Arial;
+     color:#FF002A;
+     text-align:left;
+     font-weight:bold;
+     text-align:center;
+}
+.PagingControl {
+    font-family:Tahoma,'Times New Roman',Arial;
+    font-size:14px;
+}
+.PagingControl a {
+    background-color:#EFEFEF;
+    color:#5A595A;
+    padding:2px;
+}
+.PagingControl a:hover{
+    background-color:#CBCBCB;
+    color:#EFEFEF;
+    padding:2px;
+}
+.PagingControl span {
+    font-weight:bold;
+    background-color:#EFEFEF;
+    border:solid;
+    color:#5A595A;
+    border-width:1px;
+    border-color:#5A595A;
+    padding:2px;
+}
+.RepTitle { 
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    font-family:Tahoma,'Times New Roman',Arial;
+    color:#5A595A;
+    text-align:center;
+    font-size:14px;
+    font-weight:bold;
+}

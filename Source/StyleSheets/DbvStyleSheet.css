@@ -1,0 +1,76 @@
+﻿.CondPan {
+    background-color: #FFFFFF;   
+    width:auto;
+    height:0px;
+    visibility:hidden;
+    overflow: hidden;
+    margin-left:auto;
+    margin-right:auto;
+}
+.OrdPan {
+    background-color: #FFFFFF;   
+    width:auto;
+    height:0px;
+    visibility:hidden;
+    overflow: hidden;
+}
+.CondPanCom {
+    margin:3px;
+}
+.CondPanLow {
+    width:auto;
+    height:auto;
+    text-align:center;
+}
+.ExtText {
+     font-family:Tahoma,'Times New Roman',Arial;
+     color:#585858;
+     font-weight:bold;
+     font-size:12px;
+     vertical-align:top;
+}
+.ExtButton {
+     width:20px;
+     height:20px;
+     vertical-align:bottom;
+}
+.CondBox {
+    background-color:#EFEFEF;
+    width:80px;
+    text-align:center;
+    color:#232323;
+    border-width:1px;
+    border-color:#9C9C9C;
+    margin:5px;
+}
+.CondTable {
+    border-left-width:1px;
+    border-right-width:1px;
+    border-top-width:1px;
+    border-bottom-width:1px;
+    border-color:#5A595A;
+    margin-left:auto;
+    margin-right:auto;
+}
+.CondHeader {
+     font-family:Tahoma,'Times New Roman',Arial;
+     color:#454745;
+     text-align:center;
+     background-color:#EFEFEF;
+     font-size:12px;   
+}
+.CondCell {
+    min-width:100px;
+}
+.CondTitle { 
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    font-family:Tahoma,'Times New Roman',Arial;
+    color:#5A595A;
+    text-align:center;
+    font-size:14px;
+    font-weight:bold;
+    padding-top:0px;
+    padding-bottom:5px;
+}

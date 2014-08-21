@@ -1,0 +1,20 @@
+﻿.ScriptGridView {
+    min-width:800px;
+}
+.ScriptGridViewEdit {
+    color:black;
+    border:solid;
+    border-width:thin;
+    border-color:#5C9DE9;
+    background-color:#D8E8FA;
+}
+.ScriptPathNormal {
+    border:none;
+    text-align:left;
+}
+.ScriptPathEdit {
+    border:solid;
+    border-width:thin;
+    border-color:#83C9FB;
+    text-align:left;
+}

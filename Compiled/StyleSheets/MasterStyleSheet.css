@@ -1,0 +1,65 @@
+﻿.masterUpperControlP {
+    height:auto;
+    width:auto;
+    border:none;
+    background:none;
+    text-align:right;
+    vertical-align:bottom;
+    min-width:100px;
+    min-height:40px;
+    padding-top:2px;
+}
+.masterLowerStatusP {
+    height:auto;
+    width:auto;
+    border:none;  
+    background:none;
+    text-align:left;
+    vertical-align:bottom;
+    min-width:100px;
+    min-height:40px;
+    padding-top:5px;
+}
+.masterUpperRight {
+    float:right;
+    padding:10px;
+}
+.masterUpperLeft {
+    float:left;
+    padding:10px;
+}
+.masterUpperCenter {
+    text-align:center;
+    padding-top:20px;
+}
+.masterUpper {
+    overflow:hidden;
+    background-image:url('../Images/MenuBar.jpg');
+    background-repeat:repeat-x;
+}
+.masterLowerRight {
+    float:right;
+    padding-top:10px;
+}
+.masterLowerLeft {
+    float:left;
+    padding-top:10px;
+}
+.masterLower {
+   background-image:url('../Images/MenuBarLower2.jpg');
+    background-repeat:repeat-x;
+    overflow:hidden;
+}
+.masterMainBody {
+    overflow:hidden;
+    margin:0em; 
+}
+.StatusLower {
+    border:none;
+    padding-top:10px;
+    font-family:Tahoma,'Times New Roman',Arial;
+    color:#454745;
+    text-align:left;
+    font-size:12px;
+    font-weight:bold;
+}

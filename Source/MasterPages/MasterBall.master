@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterBall.master.cs" Inherits="Views_MasterBall" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html style="overflow:hidden">
+<head runat="server">
+    <title></title>
+    <link rel="Shortcut Icon" href="../Images/favicon.ico" />
+    <link href="../StyleSheets/MainStyleSheet.css" type="text/css" rel="Stylesheet" />
+    <link href="../StyleSheets/MasterStyleSheet.css" type="text/css" rel="Stylesheet" />
+    <asp:ContentPlaceHolder id="masterCSS" runat="server"/>
+    <script type="text/javascript">
+        //on page load
+        function pageLoad() {
+            //set the panel size
+            setPanelSize();
+        }
+        //adjusts sizes
+        function setPanelSize() {
+            //Get the values of the text boxes
+            var pan = document.getElementById("masterMainDisplay");
+            //current client window height
+            var cliY = document.documentElement.clientHeight;
+            //set the panel height
+            pan.style.height = ((cliY - 118) + "px");
+            //Set panel scroll
+            pan.scrollTop = document.getElementById("ScrollPos").value;
+        }
+        //Enter key function
+        function EnterKey(e) {
+            //iF the key is the enter key
+            if (e.keyCode == 13) {
+                //Get the page enter key
+                var enter = document.getElementById("EnterButton");
+                //If the page has an enter button
+                if (enter != null) {
+                    //remove focus from the active event
+                    document.activeElement.blur();
+                    //focus on the component
+                    enter.focus();
+                    //Click the button
+                    enter.click();
+                }
+            }
+        }
+        //Set the scroll position variable
+        function setScroll() {
+            //Get the values of the text boxes
+            var pan = document.getElementById("masterMainDisplay");
+            //Set the hidden pos variable
+            document.getElementById("ScrollPos").value = pan.scrollTop;
+        }
+        //Sets focus to the enter button if one exists
+        function focusEnter() {
+            //Get the values of the text boxes
+            var enter = document.getElementById("EnterButton");
+            //if the object exists
+            if (enter != null) {
+                //focus on the component
+                enter.focus();
+            }
+            else {
+                return false;
+            }
+        }
+</script>
+</head>
+<body id="masterBody" class="masterMainBody" onkeypress="EnterKey(event)" onresize="setPanelSize()">
+    <form id="masterForm" runat="server">
+    <asp:HiddenField ID="ScrollPos" runat="server" />
+    <ajaxToolkit:ToolkitScriptManager ID="MasterScriptManager" CombineScripts="false" runat="server" EnablePartialRendering="true" ScriptMode="Release" />
+    <div class="masterUpper">
+        <div class="masterUpperLeft"><asp:Label id="mHeaderLabel" CssClass="HeaderText" runat="server"/></div>
+        <div class="masterUpperRight"><asp:Panel ID="masterUpperControlPR" CssClass="masterUpperControlP" runat="server"></asp:Panel></div>
+        <div class="masterUpperCenter">
+            <asp:UpdatePanel ID="masterUpperUpdate" UpdateMode="conditional" ChildrenAsTriggers="true" runat="server">
+                <ContentTemplate><asp:Label id="mHeaderLabelCenter" CssClass="StatusBox" runat="server"/></ContentTemplate></asp:UpdatePanel></div>
+    </div>
+    <div id="masterMainDisplay" style="overflow-y:scroll" onscroll="setScroll()" ><asp:ContentPlaceHolder id="masterMain" runat="server"></asp:ContentPlaceHolder></div>
+    <div class="masterLower">
+        <div class="masterLowerLeft"><asp:UpdatePanel ID="masterTableLeftLPan" runat="server"><ContentTemplate><asp:Panel ID="masterLowerControlPL" CssClass="masterLowerStatusP" runat="server"></asp:Panel></ContentTemplate></asp:UpdatePanel></div>
+        <div class="masterLowerRight"><asp:UpdatePanel ID="masterTableRightLPan" UpdateMode="Conditional" runat="server"><ContentTemplate><asp:Panel ID="masterLowerControlPR" CssClass="masterUpperControlP" runat="server"></asp:Panel></ContentTemplate></asp:UpdatePanel></div>
+        <div class="masterLowerCenter"></div>
+    </div>
+</form>
+</body> 
+</html>
