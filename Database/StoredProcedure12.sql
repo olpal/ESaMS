@@ -1417,7 +1417,7 @@ BEGIN
 		ON rl.eid = ev.eid WHERE ev.CategoryName=''' + @Category + ''' '
 	END)
 	--Add the order by statement to the list
-	SET @SQL = @SQL + 'ORDER BY rl.StartDate, rl.StartTime, ev.categoryname, ev.name ASC'		
+	SET @SQL = @SQL + 'ORDER BY StartDate, StartTime, ev.categoryname, ev.name ASC'		
 	EXEC (@SQL)	
 
 END
